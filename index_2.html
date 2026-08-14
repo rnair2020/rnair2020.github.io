@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rajeev Nair — Capability Statement</title>
+<meta name="description" content="Capability statement for Rajeev Nair, PMP: federal and DoD program delivery, process improvement, low-code systems, and Section 508 accessibility compliance. Active Secret clearance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0E2B33;
+  --body:#22343A;
+  --muted:#4C5F66;
+  --surface:#FFFFFF;
+  --alt:#F1F4F3;
+  --line:#7E8F8E;
+  --accent:#9A5B00;
+  --accent-inv:#F2A93B;
+  --verify:#186647;
+  --verify-inv:#7BC9A4;
+  --focus:#9A5B00;
+
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --text:"Source Sans 3","Segoe UI",system-ui,-apple-system,sans-serif;
+  --data:"IBM Plex Mono","SFMono-Regular",Consolas,monospace;
+
+  --gut:clamp(1.25rem,4vw,3.5rem);
+  --max:78rem;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--surface);color:var(--body);
+  font-family:var(--text);font-size:clamp(1rem,0.96rem + 0.2vw,1.0625rem);
+  line-height:1.6;
+}
+
+/* ---------- skip link ---------- */
+.skip{
+  position:absolute;left:0.5rem;top:-100%;z-index:100;
+  background:var(--ink);color:#fff;padding:0.75rem 1.25rem;
+  font-family:var(--display);font-size:1.125rem;letter-spacing:0.04em;
+  text-transform:uppercase;text-decoration:none;
+}
+.skip:focus{top:0.5rem}
+
+/* ---------- focus ---------- */
+a:focus-visible,button:focus-visible{
+  outline:3px solid var(--focus);outline-offset:3px;border-radius:2px;
+}
+.band a:focus-visible{outline-color:var(--accent-inv)}
+
+/* ---------- shell ---------- */
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--gut)}
+section{padding-block:clamp(2.75rem,6vw,4.75rem)}
+.alt-bg{background:var(--alt)}
+.band{background:var(--ink);color:#fff}
+.band .lbl{color:var(--accent-inv)}
+.band a{color:#fff}
+
+/* ---------- type ---------- */
+h1,h2,h3{font-family:var(--display);color:var(--ink);margin:0;line-height:1.05;font-weight:700}
+.band h2,.band h3{color:#fff}
+h1{font-size:clamp(3rem,10vw,6.5rem);letter-spacing:-0.015em;text-transform:uppercase}
+h2{font-size:clamp(1.85rem,4vw,2.75rem);letter-spacing:0.005em;text-transform:uppercase}
+h3{font-size:1.2rem;letter-spacing:0.02em;text-transform:uppercase}
+p{margin:0 0 1rem}
+p:last-child{margin-bottom:0}
+
+/* section label — reads like a form field label, not a decoration */
+.lbl{
+  font-family:var(--data);font-size:0.72rem;font-weight:600;
+  letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);
+  margin:0 0 0.5rem;display:block;
+}
+.rule{border:0;border-top:2px solid var(--line);margin:1.1rem 0 1.9rem}
+.band .rule{border-top-color:#3D5A62}
+
+/* ---------- masthead ---------- */
+.mast{padding-block:clamp(2.5rem,7vw,4.5rem) clamp(1rem,2.5vw,1.75rem)}
+.mast h1{margin-bottom:0.35rem}
+.creds{
+  font-family:var(--display);font-size:clamp(1.05rem,2.4vw,1.4rem);
+  font-weight:600;letter-spacing:0.05em;text-transform:uppercase;
+  color:var(--muted);margin:0 0 1.6rem;
+}
+.record{
+  display:grid;gap:0;border-top:2px solid var(--line);border-bottom:2px solid var(--line);
+  grid-template-columns:repeat(auto-fit,minmax(min(11rem,100%),1fr));
+}
+.record div{padding:0.85rem 0;border-right:1px solid var(--line)}
+.record div:last-child{border-right:0}
+.record div+div{padding-left:1.1rem}
+.record dt{
+  font-family:var(--data);font-size:0.68rem;font-weight:600;letter-spacing:0.15em;
+  text-transform:uppercase;color:var(--muted);margin:0 0 0.2rem;
+}
+.record dd{margin:0;font-family:var(--display);font-size:1.2rem;font-weight:600;
+  letter-spacing:0.02em;text-transform:uppercase;color:var(--ink)}
+.thesis{
+  font-family:var(--display);font-weight:500;
+  font-size:clamp(1.6rem,3.8vw,2.5rem);line-height:1.15;
+  color:var(--ink);margin:1.75rem 0 0;max-width:none;
+}
+.thesis span{display:block}
+.thesis b{font-weight:700;color:var(--accent)}
+
+/* ---------- capability grid ---------- */
+.grid{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);
+  grid-template-columns:repeat(3,1fr)}
+.cap{background:var(--surface);padding:1.5rem 1.35rem}
+.alt-bg .cap{background:var(--alt)}
+.cap svg{width:30px;height:30px;stroke:var(--accent);fill:none;
+  stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;margin-bottom:0.85rem;display:block}
+.cap h3{margin-bottom:0.7rem}
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:0.4rem;margin:0;padding:0}
+.chips li{
+  font-family:var(--data);font-size:0.74rem;letter-spacing:0.02em;
+  border:1px solid var(--line);padding:0.22rem 0.55rem;color:var(--muted);
+  background:var(--surface);
+}
+
+/* ---------- metrics ---------- */
+.metrics{display:grid;gap:1px;background:#3D5A62;border:1px solid #3D5A62;
+  grid-template-columns:repeat(4,1fr)}
+.metric{background:var(--ink);padding:1.4rem 1.2rem}
+.metric .n{
+  font-family:var(--display);font-weight:700;font-size:clamp(2.1rem,5vw,2.9rem);
+  line-height:1;color:var(--accent-inv);display:block;letter-spacing:-0.01em;
+}
+.metric .d{
+  font-family:var(--data);font-size:0.76rem;line-height:1.45;
+  color:#D6E2E4;display:block;margin-top:0.5rem;
+}
+
+/* ---------- arc ---------- */
+.arc{list-style:none;margin:0;padding:0;display:grid;gap:1px;background:var(--line);
+  border:1px solid var(--line)}
+.arc>li{background:var(--surface);padding:1.4rem 1.35rem;display:grid;gap:0.6rem;
+  grid-template-columns:8.5rem 1fr;align-items:start}
+.arc .yr{
+  font-family:var(--data);font-weight:600;font-size:0.86rem;letter-spacing:0.06em;
+  color:var(--accent);padding-top:0.15rem;
+}
+.arc h3{margin-bottom:0.35rem}
+.arc p{color:var(--muted);font-size:0.95rem;margin-bottom:0.7rem}
+
+/* ---------- past performance ---------- */
+.pp{list-style:none;margin:0;padding:0;display:grid;gap:1.5rem;
+  grid-template-columns:repeat(auto-fit,minmax(min(19rem,100%),1fr))}
+.pp>li{border-left:4px solid var(--accent);padding-left:1.15rem}
+.pp h3{margin-bottom:0.5rem}
+.pp .who{
+  font-family:var(--data);font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--muted);display:block;margin-bottom:0.6rem;
+}
+.pp p{font-size:0.97rem}
+
+/* ---------- ledger (signature) ---------- */
+.ledger{width:100%;border-collapse:collapse;font-family:var(--data);font-size:0.84rem}
+.ledger caption{text-align:left;color:#D6E2E4;font-size:0.88rem;margin-bottom:1rem;
+  font-family:var(--text);max-width:62ch}
+.ledger th,.ledger td{
+  text-align:left;padding:0.65rem 0.9rem 0.65rem 0;border-bottom:1px solid #3D5A62;
+}
+.ledger th{
+  font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--accent-inv);font-weight:600;
+}
+.ledger td{color:#E4EDEE}
+.ledger .ratio{font-weight:600;color:#fff;white-space:nowrap}
+.ledger .pass{color:var(--verify-inv);font-weight:600;white-space:nowrap}
+.swatch{
+  display:inline-block;width:0.85rem;height:0.85rem;margin-right:0.5rem;
+  border:1px solid #6F8483;vertical-align:-1px;
+}
+.conf{list-style:none;margin:1.75rem 0 0;padding:0;display:grid;gap:0.5rem 1.5rem;
+  grid-template-columns:repeat(auto-fit,minmax(min(17rem,100%),1fr))}
+.conf li{padding-left:1.5rem;position:relative;font-size:0.94rem;color:#E4EDEE}
+.conf li::before{
+  content:"\2713";position:absolute;left:0;top:0;color:var(--verify-inv);font-weight:700;
+}
+
+/* ---------- contact ---------- */
+.contact{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);
+  grid-template-columns:repeat(auto-fit,minmax(min(14rem,100%),1fr))}
+.contact div{background:var(--surface);padding:1.3rem 1.2rem}
+.contact dt{font-family:var(--data);font-size:0.68rem;font-weight:600;letter-spacing:0.15em;
+  text-transform:uppercase;color:var(--muted);margin-bottom:0.35rem}
+.contact dd{margin:0;font-size:1.05rem}
+.contact a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px;
+  min-height:44px;display:inline-flex;align-items:center}
+
+.quotes{display:grid;gap:1px;background:#3D5A62;border:1px solid #3D5A62;
+  grid-template-columns:repeat(2,1fr)}
+.quotes blockquote{background:var(--ink);margin:0;padding:1.6rem 1.5rem;display:flex;
+  flex-direction:column;justify-content:space-between;gap:1.1rem}
+.quotes p{
+  font-family:var(--display);font-weight:500;font-size:clamp(1.2rem,2.2vw,1.55rem);
+  line-height:1.25;color:#fff;margin:0;
+}
+.quotes .mark{color:var(--accent-inv)}
+.quotes footer{
+  border:0;padding:0;font-family:var(--data);font-size:0.74rem;letter-spacing:0.04em;
+  color:#B9C9CC;line-height:1.5;
+}
+
+.cta{
+  display:inline-flex;align-items:center;justify-content:center;gap:0.6rem;
+  min-height:48px;padding:0.75rem 1.6rem;background:var(--ink);color:#fff;
+  font-family:var(--display);font-size:1.15rem;font-weight:600;letter-spacing:0.05em;
+  text-transform:uppercase;text-decoration:none;border:2px solid var(--ink);
+}
+.cta:hover,.cta:focus-visible{background:var(--surface);color:var(--ink)}
+.cta-alt{background:var(--surface);color:var(--ink)}
+.cta-alt:hover,.cta-alt:focus-visible{background:var(--ink);color:#fff}
+.cta svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8;
+  stroke-linecap:round;stroke-linejoin:round}
+.cta-row{display:flex;flex-wrap:wrap;gap:0.85rem;align-items:center;margin-top:1.6rem}
+.cta-note{font-size:0.92rem;color:var(--muted);margin:0}
+.skills{display:grid;gap:1.6rem;grid-template-columns:repeat(2,1fr)}
+.skills h3{margin-bottom:0.7rem}
+.edu{border-left:4px solid var(--accent);padding-left:1.15rem;margin-top:2rem}
+.edu h3{margin-bottom:0.35rem}
+.edu p{color:var(--muted);margin:0}
+
+footer{border-top:2px solid var(--line);padding-block:1.75rem;font-size:0.86rem;color:var(--muted)}
+
+/* ---------- responsive ---------- */
+@media (max-width:62rem){
+  .grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:44rem){
+  .metrics{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:44rem){
+  .skills{grid-template-columns:1fr}
+  .quotes{grid-template-columns:1fr}
+}
+@media (max-width:34rem){
+  .grid{grid-template-columns:1fr}
+  .metrics{grid-template-columns:1fr}
+  .arc>li{grid-template-columns:1fr;gap:0.4rem}
+  .ledger{font-size:0.7rem}
+  .ledger th,.ledger td{padding:0.5rem 0.35rem 0.5rem 0;white-space:normal}
+  .ledger .ratio,.ledger .pass{white-space:normal}
+  .ledger caption{font-size:0.82rem}
+  .swatch{display:none}
+  .record div{border-right:0;border-bottom:1px solid var(--line)}
+  .record div:last-child{border-bottom:0}
+  .record div+div{padding-left:0}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:0.01ms !important;transition-duration:0.01ms !important;
+    scroll-behavior:auto !important}
+}
+
+/* ---------- print: the capability statement as a handout ---------- */
+@page{margin:0.5in}
+@media print{
+  :root{--gut:0}
+  html,body{background:#fff}
+  body{font-size:8.3pt;color:#000;line-height:1.3}
+  .wrap{max-width:100%;padding-inline:0}
+  .skip,#conformance,.cap svg,.cta-row{display:none}
+  .skills{gap:6pt}
+  .quotes{grid-template-columns:repeat(4,1fr);background:#000;border-color:#000}
+  .quotes p{line-height:1.18}
+  .quotes blockquote:nth-child(n+5){display:none}
+  .quotes blockquote{background:#fff !important;padding:4pt 5pt;gap:3pt}
+  .quotes p{font-size:7.8pt;color:#000}
+  .quotes .mark{color:#000}
+  .quotes footer{font-size:6pt;color:#333}
+  .edu{margin-top:8pt;border-left-color:#000}
+
+  section{padding-block:3.5pt;break-inside:auto}
+  .mast{padding-block:0 8pt}
+  h1{font-size:25pt;margin-bottom:1pt}
+  h2{font-size:11.5pt}
+  h3{font-size:8.8pt}
+  .creds{font-size:8pt;margin-bottom:6pt}
+  .lbl{font-size:6pt;margin-bottom:2pt}
+  .rule{margin:2pt 0 5pt;border-top-width:1.5pt;border-color:#000}
+  .thesis{font-size:12.5pt;margin-top:8pt;max-width:none}
+  .thesis b{color:#000}
+
+  .record{border-color:#000}
+  .record div{padding:4pt 0;border-right-color:#000}
+  .record dt{font-size:5.8pt}
+  .record dd{font-size:8.5pt}
+
+  .grid{background:#000;border-color:#000;grid-template-columns:repeat(3,1fr)}
+  .cap{padding:5pt 6pt;background:#fff !important}
+  .cap h3{margin-bottom:3pt}
+  .chips{gap:2pt}
+  .chips li{font-size:6pt;padding:0.5pt 2.5pt;border-color:#777;background:#fff}
+
+  .band{background:#fff !important;color:#000}
+  .band h2{color:#000}
+  .metrics{background:#000 !important;border-color:#000;grid-template-columns:repeat(4,1fr)}
+  .metric{background:#fff !important;padding:5pt 6pt}
+  .metric .n{font-size:13.5pt;color:#000}
+  .metric .d{font-size:6.2pt;color:#222;margin-top:2pt}
+
+  .arc{border-color:#000;background:#000}
+  .arc>li{padding:5pt 6pt;grid-template-columns:6.5rem 1fr;gap:4pt}
+  .arc .yr{font-size:7pt}
+  .arc h3{margin-bottom:2pt}
+  .arc p{font-size:7.6pt;margin-bottom:3pt}
+
+  .pp{gap:7pt;grid-template-columns:repeat(2,1fr)}
+  .pp>li{border-left-width:2pt;border-left-color:#000;padding-left:6pt}
+  .pp p{font-size:7.6pt}
+  .pp .who{font-size:6pt;margin-bottom:3pt}
+  .alt-bg{background:#fff}
+
+  .contact{border-color:#000;background:#000}
+  .contact div{padding:5pt 6pt}
+  .contact dd{font-size:8.5pt}
+  a{text-decoration:none;color:#000}
+  footer{border-top-width:1.5pt;border-color:#000;padding-block:4pt;font-size:6.5pt}
+}
+
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="wrap mast">
+  <h1>Rajeev Nair</h1>
+  <p class="creds">PMP &middot; CSM &middot; Lean Six Sigma Black Belt &middot; CCIM &middot; PMI Citizen Developer</p>
+
+  <dl class="record">
+    <div><dt>Clearance</dt><dd>Active Secret</dd></div>
+    <div><dt>Based</dt><dd>Manassas, VA &mdash; DC Metro</dd></div>
+    <div><dt>Sectors</dt><dd>Federal &middot; DoD &middot; Healthcare</dd></div>
+    <div><dt>Experience</dt><dd>10+ Years</dd></div>
+  </dl>
+
+  <p class="thesis"><span>I run programs &mdash;</span><span>and <b>build the systems</b> they run on.</span></p>
+
+  <div class="cta-row">
+    <a class="cta" href="https://cal.com/rajeev.nair">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <rect x="3" y="5" width="18" height="16" rx="1.5"/><path d="M3 10h18M8 3v4M16 3v4"/>
+      </svg>
+      Book a 30-minute call
+    </a>
+    <a class="cta cta-alt" href="https://www.linkedin.com/in/rajeev-nair-089141320/">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <rect x="3" y="3" width="18" height="18" rx="1.5"/>
+        <path d="M7.5 10.5v6M7.5 7.6v.1M11.5 16.5v-6M11.5 13c0-1.4 1-2.5 2.4-2.5s2.6 1.1 2.6 2.5v3.5"/>
+      </svg>
+      LinkedIn profile
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ CAPABILITIES ============ -->
+  <section class="wrap">
+    <span class="lbl">Core Capabilities</span>
+    <h2>What I deliver</h2>
+    <hr class="rule">
+
+    <div class="grid">
+      <article class="cap">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M3 5h18M3 12h18M3 19h11"/><circle cx="19" cy="19" r="2.5"/>
+        </svg>
+        <h3>Program &amp; Project Delivery</h3>
+        <ul class="chips">
+          <li>DoD &amp; federal programs</li><li>Governance</li><li>Battle rhythm</li>
+          <li>Risk &amp; dependencies</li><li>O-6 / SES stakeholders</li>
+        </ul>
+      </article>
+
+      <article class="cap">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M4 20V9m5 11V4m5 16v-7m5 7V7"/>
+        </svg>
+        <h3>Process Improvement</h3>
+        <ul class="chips">
+          <li>Lean Six Sigma BB</li><li>Workflow redesign</li><li>Metrics design</li>
+          <li>Quality review</li><li>Gap analysis</li>
+        </ul>
+      </article>
+
+      <article class="cap">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/>
+        </svg>
+        <h3>Low-Code Systems</h3>
+        <ul class="chips">
+          <li>Power Apps</li><li>Power Automate</li><li>SharePoint</li>
+          <li>Excel architecture</li><li>VBA</li>
+        </ul>
+      </article>
+
+      <article class="cap">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3"/>
+          <path d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3"/>
+        </svg>
+        <h3>Accessibility &amp; Compliance</h3>
+        <ul class="chips">
+          <li>Section 508</li><li>WCAG 2.1 AA</li><li>Contrast auditing</li>
+          <li>Rule authoring</li><li>Automated checkers</li>
+        </ul>
+      </article>
+
+      <article class="cap">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M4 7h11l-3-3M20 17H9l3 3"/><path d="M4 7v3M20 17v-3"/>
+        </svg>
+        <h3>Systems Migration</h3>
+        <ul class="chips">
+          <li>EHR platforms</li><li>HRIS &amp; payroll</li><li>Telephony to cloud</li>
+          <li>M365 with MFA</li><li>Parallel &amp; cutover</li>
+        </ul>
+      </article>
+
+      <article class="cap">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="9" cy="8" r="3"/><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5"/>
+          <circle cx="17.5" cy="9.5" r="2.2"/><path d="M16 15.5c2.5 0 4.5 1.6 4.5 3.5"/>
+        </svg>
+        <h3>Operations Leadership</h3>
+        <ul class="chips">
+          <li>Multi-site</li><li>Contact centers</li><li>Onshore &amp; offshore</li>
+          <li>Hiring &amp; training</li><li>Change management</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ METRICS ============ -->
+  <section class="band">
+    <div class="wrap">
+      <span class="lbl">Scale of Work</span>
+      <h2>By the numbers</h2>
+      <hr class="rule">
+      <div class="metrics">
+        <div class="metric"><span class="n">$16B</span><span class="d">Federal grant program supported</span></div>
+        <div class="metric"><span class="n">100+</span><span class="d">Staff led across 8 locations</span></div>
+        <div class="metric"><span class="n">16</span><span class="d">Hired and trained across two shifts</span></div>
+        <div class="metric"><span class="n">1 day</span><span class="d">Support platform and toll-free line stood up</span></div>
+        <div class="metric"><span class="n">45</span><span class="d">Accessibility rules authored</span></div>
+        <div class="metric"><span class="n">183</span><span class="d">Executive engagements reconciled</span></div>
+        <div class="metric"><span class="n">$15&ndash;20M</span><span class="d">Annual revenue under operational ownership</span></div>
+        <div class="metric"><span class="n">23</span><span class="d">Enterprise templates audited</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ARC ============ -->
+  <section class="wrap">
+    <span class="lbl">Career Arc</span>
+    <h2>Where I've done it</h2>
+    <hr class="rule">
+
+    <ol class="arc">
+      <li>
+        <span class="yr">2024 &ndash; Present</span>
+        <div>
+          <h3>Defense Agency &mdash; Digital Transformation</h3>
+          <p>Business tooling and process support for a senior command office.</p>
+          <ul class="chips">
+            <li>Power Platform delivery</li><li>508 compliance program</li>
+            <li>Executive engagement portfolio</li><li>Governance analysis</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span class="yr">2021 &ndash; 2024</span>
+        <div>
+          <h3>Federal Programs &mdash; Grants &amp; Records</h3>
+          <p>Applicant support surge for a national grant program; personnel records modernization.</p>
+          <ul class="chips">
+            <li>Contact center standup</li><li>Salesforce case resolution</li>
+            <li>CONUS / OCONUS digitization</li><li>$1&ndash;2M facility project</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span class="yr">2020 &ndash; 2021</span>
+        <div>
+          <h3>Healthcare Operations &mdash; Pediatric Cardiology</h3>
+          <p>Sustained a 10+ location practice through the COVID-19 period.</p>
+          <ul class="chips">
+            <li>Payroll / HRIS migration</li><li>M365 and SSO with MFA</li>
+            <li>Multi-site scheduling</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span class="yr">2015 &ndash; 2019</span>
+        <div>
+          <h3>Healthcare Operations &mdash; Sleep Medicine</h3>
+          <p>Eight locations, 100+ staff, full operational ownership.</p>
+          <ul class="chips">
+            <li>EHR migration</li><li>Billing &amp; DME integration</li>
+            <li>Cloud telephony</li><li>Offshore scheduling center</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ PAST PERFORMANCE ============ -->
+  <section class="wrap alt-bg">
+    <span class="lbl">Selected Past Performance</span>
+    <h2>Representative work</h2>
+    <hr class="rule">
+
+    <ul class="pp">
+      <li>
+        <h3>Engagement Intake Application</h3>
+        <span class="who">Defense agency &mdash; command office</span>
+        <p>Built an end-to-end request application on a low-code platform with a list backend &mdash; intake, attachment handling, status workflow, and confirmation. Now the reference pattern for the office's engagement portfolio.</p>
+      </li>
+      <li>
+        <h3>Accessibility Rules &amp; Automated Checker</h3>
+        <span class="who">Defense agency &mdash; enterprise templates</span>
+        <p>Authored 45 conformance rules across presentation, document, and spreadsheet formats. Ran a contrast audit of the enterprise palette, inventoried 23 templates, and built a checker that flags violations inline with a custom ribbon interface.</p>
+      </li>
+      <li>
+        <h3>Grant Program Applicant Support</h3>
+        <span class="who">Federal grants program &mdash; $16B</span>
+        <p>Stood up a ticketing platform and toll-free line within a single day, then hired and trained sixteen people across two shifts covering 8am&ndash;8pm to absorb the application surge. Worked case resolution alongside the government representative.</p>
+      </li>
+      <li>
+        <h3>Readiness Reporting Data Collection</h3>
+        <span class="who">Defense agency &mdash; enterprise reporting</span>
+        <p>Built a monthly mandatory record collection on a SharePoint list for Defense Readiness Reporting System input, with automated notifications routed to individual directorates &mdash; replacing manual chasing with a scheduled workflow.</p>
+      </li>
+      <li>
+        <h3>Workload Measurement &amp; Governance Analysis</h3>
+        <span class="who">Defense agency &mdash; senior leadership</span>
+        <p>Ran a 15-day workload data collection, then delivered a briefing deck, information paper, and analytics workbook with a fully reconciled data chain across all three. Separately produced oversight analysis and a Service-by-Service governance forum participation matrix.</p>
+      </li>
+      <li>
+        <h3>Clinical Systems Migration</h3>
+        <span class="who">Multi-site healthcare &mdash; 8 locations</span>
+        <p>Led an EHR platform migration with integration to corporate billing and durable medical equipment management &mdash; a multi-system cutover that retrained every clinical and revenue workflow in the organization.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ KUDOS ============ -->
+  <section class="band">
+    <div class="wrap">
+      <span class="lbl">Client Feedback</span>
+      <h2>What they said</h2>
+      <hr class="rule">
+
+      <div class="quotes">
+        <blockquote>
+          <p><span class="mark" aria-hidden="true">&ldquo;</span>A unique ability to synthesize chaos.<span class="mark" aria-hidden="true">&rdquo;</span></p>
+          <footer>On turning 100+ unorganized requirements into a prioritized tracking system</footer>
+        </blockquote>
+        <blockquote>
+          <p><span class="mark" aria-hidden="true">&ldquo;</span>The technical powerhouse of our team.<span class="mark" aria-hidden="true">&rdquo;</span></p>
+          <footer>On automation, workflow, and data quality across a program office</footer>
+        </blockquote>
+        <blockquote>
+          <p><span class="mark" aria-hidden="true">&ldquo;</span>He absolutely crushed it.<span class="mark" aria-hidden="true">&rdquo;</span></p>
+          <footer>On a tight-turnaround governance and oversight tasking</footer>
+        </blockquote>
+        <blockquote>
+          <p><span class="mark" aria-hidden="true">&ldquo;</span>Whenever I needed to understand the feasibility of a technical solution, Rajeev was my go-to expert.<span class="mark" aria-hidden="true">&rdquo;</span></p>
+          <footer>On technical advisory support to a program management office</footer>
+        </blockquote>
+        <blockquote>
+          <p><span class="mark" aria-hidden="true">&ldquo;</span>The team did not just wait for perfect instructions.<span class="mark" aria-hidden="true">&rdquo;</span></p>
+          <footer>On working through an emerging, loosely defined requirement</footer>
+        </blockquote>
+        <blockquote>
+          <p><span class="mark" aria-hidden="true">&ldquo;</span>Turned rough concepts into usable products.<span class="mark" aria-hidden="true">&rdquo;</span></p>
+          <footer>On moving an effort from concept to an initial operating kit</footer>
+        </blockquote>
+        <blockquote>
+          <p><span class="mark" aria-hidden="true">&ldquo;</span>Responsive, detailed, and willing to work through ambiguity.<span class="mark" aria-hidden="true">&rdquo;</span></p>
+          <footer>On sustained delivery through shifting requirements</footer>
+        </blockquote>
+        <blockquote>
+          <p><span class="mark" aria-hidden="true">&ldquo;</span>As this tool matures, it should be made available to the whole agency.<span class="mark" aria-hidden="true">&rdquo;</span></p>
+          <footer>On a workflow solution built for a single office</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATIONS ============ -->
+  <section class="wrap">
+    <span class="lbl">Credentials</span>
+    <h2>Certifications &amp; tools</h2>
+    <hr class="rule">
+
+    <h3>Certifications</h3>
+    <ul class="chips" style="margin-bottom:2.25rem">
+      <li>Project Management Professional (PMP)</li>
+      <li>Certified ScrumMaster (CSM)</li>
+      <li>Lean Six Sigma Black Belt Professional</li>
+      <li>Certified Continuous Improvement Manager</li>
+      <li>PMI Citizen Developer Practitioner</li>
+      <li>CompTIA Security+ &mdash; in progress</li>
+    </ul>
+
+    <div class="skills">
+      <div>
+        <h3>Low-Code &amp; Automation</h3>
+        <ul class="chips">
+          <li>Power Apps (Canvas)</li><li>Power Automate</li><li>SharePoint</li>
+          <li>Excel formula architecture</li><li>VBA</li><li>Visio</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Development</h3>
+        <ul class="chips">
+          <li>Python</li><li>Flask</li><li>HTML / CSS / JavaScript</li><li>SQL fundamentals</li>
+        </ul>
+      </div>
+      <div>
+        <h3>HRIS, Payroll &amp; Workforce</h3>
+        <ul class="chips">
+          <li>ADP</li><li>Paychex</li><li>Spectrum (Kronos)</li>
+          <li>Workforce administration</li><li>Parallel testing &amp; cutover</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Platforms</h3>
+        <ul class="chips">
+          <li>Salesforce</li><li>Zendesk</li><li>Microsoft 365</li><li>PIEE</li>
+          <li>NextGen</li><li>eClinicalWorks</li><li>Brightree</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Methods</h3>
+        <ul class="chips">
+          <li>Lean Six Sigma</li><li>Agile / Scrum</li><li>Process mapping</li>
+          <li>Metrics &amp; data collection design</li><li>KPIs &amp; OKRs</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Program Support</h3>
+        <ul class="chips">
+          <li>Proposal support</li><li>Vendor management</li><li>Change management</li>
+          <li>Governance &amp; battle rhythm</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="edu">
+      <h3>Education</h3>
+      <p>Bachelor's Degree &mdash; Kalinga University, India</p>
+    </div>
+  </section>
+
+  <!-- ============ ACCESSIBILITY — SIGNATURE ============ -->
+  <section class="band" id="conformance">
+    <div class="wrap">
+      <span class="lbl">Conformance</span>
+      <h2>This page is the work sample</h2>
+      <hr class="rule">
+
+      <table class="ledger">
+        <caption>Measured contrast ratios for every color pair used on this page, against the WCAG 2.1 AA thresholds of 4.5:1 for body text and 3:1 for large text and non-text elements. Audit the page yourself &mdash; the numbers should match.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Foreground</th>
+            <th scope="col">Background</th>
+            <th scope="col">Ratio</th>
+            <th scope="col">Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="swatch" style="background:#22343A"></span>Body text</td><td>White</td><td class="ratio">12.96:1</td><td class="pass">Pass AA</td></tr>
+          <tr><td><span class="swatch" style="background:#0E2B33"></span>Headings</td><td>White</td><td class="ratio">14.87:1</td><td class="pass">Pass AA</td></tr>
+          <tr><td><span class="swatch" style="background:#4C5F66"></span>Secondary text</td><td>White</td><td class="ratio">6.70:1</td><td class="pass">Pass AA</td></tr>
+          <tr><td><span class="swatch" style="background:#9A5B00"></span>Accent text</td><td>White</td><td class="ratio">5.43:1</td><td class="pass">Pass AA</td></tr>
+          <tr><td><span class="swatch" style="background:#22343A"></span>Body text</td><td>Light surface</td><td class="ratio">11.71:1</td><td class="pass">Pass AA</td></tr>
+          <tr><td><span class="swatch" style="background:#FFFFFF"></span>White text</td><td>Dark surface</td><td class="ratio">14.87:1</td><td class="pass">Pass AA</td></tr>
+          <tr><td><span class="swatch" style="background:#F2A93B"></span>Accent text</td><td>Dark surface</td><td class="ratio">7.45:1</td><td class="pass">Pass AA</td></tr>
+          <tr><td><span class="swatch" style="background:#7BC9A4"></span>Status text</td><td>Dark surface</td><td class="ratio">7.60:1</td><td class="pass">Pass AA</td></tr>
+          <tr><td><span class="swatch" style="background:#7E8F8E"></span>Borders &amp; dividers</td><td>White</td><td class="ratio">3.38:1</td><td class="pass">Pass AA</td></tr>
+        </tbody>
+      </table>
+
+      <ul class="conf">
+        <li>Semantic landmarks and a single, ordered heading hierarchy</li>
+        <li>Skip-to-content link as the first focusable element</li>
+        <li>Visible keyboard focus on every interactive element</li>
+        <li>Fully operable without a mouse</li>
+        <li>No JavaScript required &mdash; the page works with scripting disabled</li>
+        <li>Decorative icons hidden from assistive technology</li>
+        <li>No meaning conveyed by color alone</li>
+        <li>Reflows at 320px width and 400% zoom without horizontal scrolling</li>
+        <li>Reduced-motion preference respected</li>
+        <li>Print stylesheet renders a handout-ready capability statement</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="wrap">
+    <span class="lbl">Contact</span>
+    <h2>Get in touch</h2>
+    <hr class="rule">
+    <dl class="contact">
+      <div><dt>Email</dt><dd><a href="mailto:rnair2020@outlook.com">rnair2020@outlook.com</a></dd></div>
+      <div><dt>Phone</dt><dd><a href="tel:+17036771354">703-677-1354</a></dd></div>
+      <div><dt>Location</dt><dd>Manassas, VA</dd></div>
+      <div><dt>Clearance</dt><dd>Active Secret</dd></div>
+    </dl>
+
+    <div class="cta-row">
+      <a class="cta" href="https://cal.com/rajeev.nair">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="3" y="5" width="18" height="16" rx="1.5"/>
+          <path d="M3 10h18M8 3v4M16 3v4"/>
+        </svg>
+        Book a 30-minute call
+      </a>
+      <a class="cta cta-alt" href="https://www.linkedin.com/in/rajeev-nair-089141320/">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="3" y="3" width="18" height="18" rx="1.5"/>
+          <path d="M7.5 10.5v6M7.5 7.6v.1M11.5 16.5v-6M11.5 13c0-1.4 1-2.5 2.4-2.5s2.6 1.1 2.6 2.5v3.5"/>
+        </svg>
+        LinkedIn profile
+      </a>
+      <p class="cta-note">Or email me and I'll send times.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <p>Capability statement &mdash; Rajeev Nair. Built to WCAG 2.1 Level AA and Section 508.
+  Client names are generalized; details available on request.</p>
+</footer>
+
+</body>
+</html>
